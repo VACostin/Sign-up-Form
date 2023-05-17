@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+  <title>Sign-up</title>
+</head>
+
+<body>
+  <div id="leftSide">
+    <img id="backgroundImage" src="res/photo-1585202900225-6d3ac20a6962.png" alt="oops">
+    <div id="backgroundCaption">
+      <img id="logo" src="res/odin-lined.png" alt="oops">
+      <p id="captionText">ODIN</p>
+    </div>
+    <p id="footer">Photo by <a href="https://www.facebook.com/haliewestphoto/">Halie West</a> on <a
+        href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+  </div>
+  <div id="rightSide">
+    <div id="topSection">
+      <div id="textContainer">
+        <span>
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started. </p>
+          <p>You <em>know </em> you want to.</p>
+        </span>
+      </div>
+    </div>
+    <div id="middleSection">
+      <form id="thisForm" action="#" method="get">
+        <legend>Let's do this!</legend>
+        <fieldset id="rootField">
+          <fieldset class="fieldColumn">
+            <fieldset class="fieldBox">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" pattern="^[a-zA-Z]{1,20}$">
+            </fieldset>
+            <fieldset class="fieldBox">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email">
+            </fieldset>
+            <fieldset class="fieldBox">
+              <label for="password">PASSWORD</label>
+              <input type="password" class="passwords" id="password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{1,20}$">
+            </fieldset>
+          </fieldset>
+          <fieldset class="fieldColumn">
+            <fieldset class="fieldBox">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" pattern="^[a-zA-Z]{1,20}$">
+            </fieldset>
+            <fieldset class="fieldBox">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="number" id="phone_number" min="0" maxlength="20">
+            </fieldset>
+            <fieldset class="fieldBox">
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input type="password" class="passwords" id="confirm_password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{1,20}$">
+            </fieldset>
+          </fieldset>
+        </fieldset>
+      </form>
+    </div>
+    <div id="bottomSection">
+      <div id="bottomContainer">
+        <button type="submit" form="thisForm">Create Account</button>
+        <p id="login">Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+:root {
+  --page-width: 1440px;
+  --page-height: 1024px;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(res/Norse-Bold.otf);
+}
+
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  min-height: var(--page-height);
+  width: var(--page-width);
+  margin: 0px;
+  display: flex;
+}
+
+#leftSide {
+  height: 100%;
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#rightSide {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Left side */
+#backgroundImage {
+  width: 100%;
+  height: 100%;
+}
+
+#backgroundCaption {
+  width: 100%;
+  height: 135px;
+  background-color: rgba(0,0,0,0.36);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 21.5%;
+}
+
+#logo {
+  width: 100px;
+  height: 133px;
+}
+
+#captionText {
+  color: white;
+  font-size: 84px;
+  font-family: Norse-Bold, sans-serif;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+#footer>a {
+  text-decoration: none;
+  color: white;
+  text-decoration:underline;
+}
+
+/*Right side */
+#rightSide>div {
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+
+#topSection {
+  height: 35%;
+  width: 100%;
+  background-color: rgb(249, 250, 251);
+  position: relative;
+}
+
+#middleSection {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  z-index: 1;
+  box-shadow: 0px 4px 19px 0px #000000;
+}
+
+#bottomSection {
+  padding-top: 4%;
+  height: 35%;
+  width: 100%;
+  background-color: rgb(249, 250, 251);
+}
+
+/*Top Section */
+span {
+  position: absolute;
+  bottom: 5%;
+  margin-right: 18%;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+/*Middle Section */
+
+
+form *:not(input) {
+  border: none;
+  padding-left: 0;
+}
+
+
+legend {
+  font-size: 26px;
+  font-weight: bolder;
+  margin-left: 0;
+  margin-bottom: 2.5%;
+}
+
+label {
+  font-size: 14px;
+}
+
+#rootField {
+  margin-left: 0;
+  display: flex;
+  gap: 7.5%;
+  padding: 0;
+}
+
+.fieldColumn {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldBox {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: calc(var(--page-width) * 18 / 100);
+  height: calc(var(--page-height) * 3 / 100);
+  border: 1px thin black;
+  border-radius: 4px;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding-left: 7px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  border: 1px thin blue;
+  box-shadow: 5px 5px 10px 0px #000000;
+}
+
+input:invalid {
+  border: 1.5px solid red;
+}
+
+/*Bottom Section */
+
+button {
+  width: calc(var(--page-width)*16.5/100);
+  height: calc(var(--page-height)*4.5/100);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #596D48;
+
+}
+
+#bottomContainer p {
+  font-size: 18px;
+}
+
+#login>a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #596D48;
+}
