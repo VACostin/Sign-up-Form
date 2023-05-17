@@ -48,7 +48,7 @@ body {
 #backgroundCaption {
   width: 100%;
   height: 135px;
-  background-color: rgba(0,0,0,0.36);
+  background-color: rgba(0, 0, 0, 0.36);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -76,7 +76,7 @@ body {
 #footer>a {
   text-decoration: none;
   color: white;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /*Right side */
